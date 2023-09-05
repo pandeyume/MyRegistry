@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Suite" thread-count="2" parallel="tests">
+<!--    <test name="Chrome-test" preserve-order="true">-->
+<!--        <classes>-->
+<!--            <class name="TestCase.Login_TC">-->
+<!--            <methods>-->
+<!--                    <include name="verifyLogin"/>-->
+<!--            </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="Firefox-test" preserve-order="true">
+        <classes>
+            <class name="TestCase.Login_TC">
+                <methods>
+                    <include name="verifyLogin"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
