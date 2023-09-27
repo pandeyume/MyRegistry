@@ -1,9 +1,7 @@
 package TestCase;
 
 import CommonPage.BaseTest;
-import PageObject.Login_PO;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
+import Login_PageObject.Login_PO;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 

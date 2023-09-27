@@ -1,23 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Test Suite" thread-count="2" parallel="tests">
-<!--    <test name="Chrome-test" preserve-order="true">-->
-<!--        <classes>-->
-<!--            <class name="TestCase.Login_TC">-->
-<!--            <methods>-->
-<!--                    <include name="verifyLogin"/>-->
-<!--            </methods>-->
-<!--            </class>-->
-<!--        </classes>-->
-<!--    </test>-->
-
-    <test name="Firefox-test" preserve-order="true">
+<suite name="CanadianTire Suite" thread-count="1" parallel="tests">
+    <test name="Chrome-test" preserve-order="true">
+        <parameter name="url" value="https://canadiantire.mrtesting.com/"/>
         <classes>
-            <class name="TestCase.Login_TC">
-                <methods>
-                    <include name="verifyLogin"/>
-                </methods>
-            </class>
+            <class name="CanadianTireSignUp_TestCase.WeddingRegistrySignUp_TC"/>
+            <class name="CanadianTireSignUp_TestCase.BabyRegistrySignUp_TC"/>
+            <class name="CanadianTireSignUp_TestCase.HousewarmingSignUp_TC"/>
+            <class name="CanadianTireSignUp_TestCase.BirthdaySignUp_TC"/>
+            <class name="CanadianTireSignUp_TestCase.HolidaySignUp_TC"/>
+            <class name="CanadianTireSignUp_TestCase.GraduationSignUp_TC"/>
+            <class name="CanadianTireSignUp_TestCase.FirstCarSignUp_TC"/>
+            <class name="CanadianTireSignUp_TestCase.UniveCollegeSignUp_TC"/>
+<!--            <class name="CanadianTireSignUp_TestCase.OtherSignUp_TC"/>-->
+<!--        <methods>-->
+<!--            <include name="verifyWeddingRegis_SignUp"/>-->
+<!--            <include name="verifyBabyRegis_SignUp"/>-->
+<!--&lt;!&ndash;            <include name="verifyHousewarmingRegis_SignUp"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <include name="verifyBirthdayRegis_SignUp"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <include name="verifyHolidayRegis_SignUp"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <include name="verifyGraduationRegis_SignUp"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <include name="verifyUniverCollegeRegis_SignUp"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            <include name="verifyFirstCarRegis_SignUp"/>&ndash;&gt;-->
+
+<!--        </methods>-->
+<!--    </class>-->
         </classes>
     </test>
+
+<!--    <test name="Firefox-test" preserve-order="true">-->
+<!--        <classes>-->
+<!--&lt;!&ndash;            <class name="TestCase.Login_TC">&ndash;&gt;-->
+<!--&lt;!&ndash;                <methods>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <include name="verifyLogin"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                </methods>&ndash;&gt;-->
+<!--&lt;!&ndash;            </class>&ndash;&gt;-->
+<!--            <class name="CanadianTireSignUp_TestCase.RegistrySignUp_TC">-->
+<!--                            <methods>-->
+<!--                                <include name="verifyWeddingRegis_SignUp"/>-->
+<!--                            </methods>-->
+<!--                        </class>-->
+<!--        </classes>-->
+<!--    </test>-->
 </suite>
