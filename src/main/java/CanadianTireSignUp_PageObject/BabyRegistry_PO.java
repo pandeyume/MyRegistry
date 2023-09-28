@@ -19,8 +19,8 @@ public class BabyRegistry_PO extends BaseClass {
     public boolean Baby_Registry() throws IOException{
         propertyLoadFiles();
         randomEmail();
-        Wait();
-        //driver.get(prop.getProperty("CT_BaseURL"));
+        //Wait();
+        driver.get(prop.getProperty("CT_BaseURL"));
         try{
             WebElement btnCreate= driver.findElement(By.xpath(prop.getProperty("btncreate")));
             btnCreate.click();
@@ -45,7 +45,7 @@ public class BabyRegistry_PO extends BaseClass {
 
             final String randomEmail = randomEmail();
             WebElement email= driver.findElement(By.cssSelector(prop.getProperty("babyEmail")));
-            email.sendKeys(prop.getProperty(randomEmail));
+            email.sendKeys(randomEmail);
 
             WebElement pass= driver.findElement(By.cssSelector(prop.getProperty("babyPwd")));
             pass.sendKeys(prop.getProperty("pass"));
@@ -59,7 +59,7 @@ public class BabyRegistry_PO extends BaseClass {
             WebElement address1= driver.findElement(By.cssSelector(prop.getProperty("babyAddress1")));
             address1.clear();
             address1.sendKeys(prop.getProperty("address"));
-            Thread.sleep(3000);
+            Thread.sleep(4000);
             address1.sendKeys(Keys.ARROW_DOWN);
             Thread.sleep(3000);
             address1.sendKeys(Keys.ENTER);
@@ -72,7 +72,7 @@ public class BabyRegistry_PO extends BaseClass {
             WebElement btnSubmit= driver.findElement(By.cssSelector(prop.getProperty("Submit")));
             btnSubmit.click();
 
-            WebDriverWait waitFnsh= new WebDriverWait(driver, Duration.ofSeconds(20));
+            WebDriverWait waitFnsh= new WebDriverWait(driver, Duration.ofSeconds(30));
             WebElement signUpCompletepage= driver.findElement(By.xpath(prop.getProperty("babySignupcompletePage")));
             WebElement title= driver.findElement(By.xpath(prop.getProperty("babySignupcompletePage1")));
             if (signUpCompletepage.isDisplayed() && title.isDisplayed()){

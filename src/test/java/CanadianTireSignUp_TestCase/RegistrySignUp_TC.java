@@ -13,32 +13,32 @@ public class RegistrySignUp_TC extends BaseTest {
     public RegistrySignUp_TC(WebDriver passdriver){
         driver= passdriver;
     }
+    
+    @Test (description = "Create a Wedding Reqistry")
+    public void verifyWeddingRegis_SignUp () throws IOException {
+        extentTest = extentReports.createTest("Verify the Wedding Registry SignUp");
+        WeddingRegistry_PO weddingRegistry_po = new WeddingRegistry_PO(driver);
+        boolean wedReg= weddingRegistry_po.Wedding_Registry();
+        if (wedReg) {
+            extentTest.log(Status.PASS, "Wedding Registry created successful");
+       }else {
+            extentTest.log(Status.FAIL, "Wedding Registry created failed");
+        }
+    }
 
-//    @Test (priority = 1, description = "Create a Wedding Reqistry")
-//    public void verifyWeddingRegis_SignUp () throws IOException {
-//        extentTest = extentReports.createTest("Verify the Wedding Registry SignUp");
-//        WeddingRegistry_PO weddingRegistry_po = new WeddingRegistry_PO(driver);
-//        boolean wedReg= weddingRegistry_po.Wedding_Registry();
-//        if (wedReg) {
-//            extentTest.log(Status.PASS, "Wedding Registry created successful");
-//        }else {
-//            extentTest.log(Status.FAIL, "Wedding Registry created failed");
-//        }
-//    }
+    @Test (description = "Create a Baby Reqistry")
+    public void verifyBabyRegis_SignUp() throws IOException{
+        extentTest = extentReports.createTest("Verify the Baby Registry SignUp");
+        BabyRegistry_PO babyRegistry_po= new BabyRegistry_PO(driver);
+        boolean babyReg= babyRegistry_po.Baby_Registry();
+        if (babyReg){
+            extentTest.log(Status.PASS, "Baby Registry created successful");
+        }else {
+            extentTest.log(Status.FAIL, "Baby Registry SignUp failed");
+        }
+    }
 
-//    @Test (priority = 2, description = "Create a Baby Reqistry")
-//    public void verifyBabyRegis_SignUp() throws IOException{
-//        extentTest = extentReports.createTest("Verify the Baby Registry SignUp");
-//        BabyRegistry_PO babyRegistry_po= new BabyRegistry_PO(driver);
-//        boolean babyReg= babyRegistry_po.Baby_Registry();
-//        if (babyReg){
-//            extentTest.log(Status.PASS, "Baby Registry created successful");
-//        }else {
-//            extentTest.log(Status.FAIL, "Baby Registry SignUp failed");
-//        }
-//    }
-
-    @Test (priority = 3, description = "Create a Housewarming Reqistry")
+    @Test (description = "Create a Housewarming Reqistry")
     public void verifyHousewarmingRegis_SignUp() throws IOException{
         extentTest = extentReports.createTest("Verify the Housewarming Registry SignUp");
         Housewarming_PO housewarming_po= new Housewarming_PO(driver);
@@ -50,7 +50,7 @@ public class RegistrySignUp_TC extends BaseTest {
         }
     }
 
-    @Test (priority = 4, description = "Create a Birthday Reqistry")
+    @Test ( description = "Create a Birthday Reqistry")
     public void verifyBirthdayRegis_SignUp() throws IOException{
         extentTest = extentReports.createTest("Verify the Birthday Registry SignUp");
         BirthdayRegistry_PO birthdayRegistry_po= new BirthdayRegistry_PO(driver);
@@ -62,7 +62,7 @@ public class RegistrySignUp_TC extends BaseTest {
         }
     }
 
-    @Test (priority = 5, description = "Create a Holiday Reqistry")
+    @Test (description = "Create a Holiday Reqistry")
     public void verifyHolidayRegis_SignUp() throws IOException{
         extentTest = extentReports.createTest("Verify the Holiday Registry SignUp");
         HolidayRegistry_PO holidayRegistry_po= new HolidayRegistry_PO(driver);

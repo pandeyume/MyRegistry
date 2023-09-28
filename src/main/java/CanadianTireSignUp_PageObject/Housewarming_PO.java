@@ -19,8 +19,8 @@ public class Housewarming_PO extends BaseClass {
     public boolean Housewarming_Registry() throws IOException{
         propertyLoadFiles();
         randomEmail();
-        Wait();
-        //driver.get(prop.getProperty("CT_BaseURL"));
+        //Wait();
+        driver.get(prop.getProperty("CT_BaseURL"));
         try {
             WebElement btnCreate= driver.findElement(By.xpath(prop.getProperty("btncreate")));
             btnCreate.click();
@@ -45,7 +45,7 @@ public class Housewarming_PO extends BaseClass {
 
             final String randomEmail= randomEmail();
             WebElement email= driver.findElement(By.cssSelector(prop.getProperty("houseEmail")));
-            email.sendKeys(prop.getProperty(randomEmail));
+            email.sendKeys(randomEmail);
 
             WebElement pass= driver.findElement(By.cssSelector(prop.getProperty("housePwd")));
             pass.sendKeys(prop.getProperty("pass"));
@@ -59,7 +59,7 @@ public class Housewarming_PO extends BaseClass {
             WebElement address1= driver.findElement(By.cssSelector(prop.getProperty("houseAddress1")));
             address1.clear();
             address1.sendKeys(prop.getProperty("address"));
-            Thread.sleep(3000);
+            Thread.sleep(4000);
             address1.sendKeys(Keys.ARROW_DOWN);
             Thread.sleep(3000);
             address1.sendKeys(Keys.ENTER);
@@ -67,7 +67,7 @@ public class Housewarming_PO extends BaseClass {
             WebElement phone= driver.findElement(By.cssSelector(prop.getProperty("housePhone")));
             phone.clear();
             phone.sendKeys(prop.getProperty("phone"));
-
+        
             Thread.sleep(2000);
             WebElement btnSubmit= driver.findElement(By.cssSelector(prop.getProperty("Submit")));
             btnSubmit.click();

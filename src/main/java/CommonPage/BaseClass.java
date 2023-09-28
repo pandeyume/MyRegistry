@@ -4,6 +4,7 @@ import com.github.javafaker.Faker;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.devtools.v85.io.IO;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Parameters;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -27,7 +28,7 @@ public class BaseClass {
     public static void propertyLoadFiles() throws IOException {
         FileInputStream fis = new FileInputStream("D:\\MyRegistry_Project\\Common.properties");
         prop= new Properties();
-        prop.load(fis);
+        prop.load(fis);      
     }
 
     public static String randomEmail() throws IOException{
@@ -36,7 +37,7 @@ public class BaseClass {
         return "umesh"+randomInt+"@yopmail.com";
     }
 
-    public void Wait() throws IOException{
-        WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(30));
-    }
+//    public void Wait() throws IOException{
+//        WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(30));
+//    }
 }

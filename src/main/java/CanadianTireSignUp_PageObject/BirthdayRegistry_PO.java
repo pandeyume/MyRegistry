@@ -19,8 +19,8 @@ public class BirthdayRegistry_PO extends BaseClass {
     public boolean Birthday_Registry() throws IOException{
         propertyLoadFiles();
         randomEmail();
-        Wait();
-        //driver.get(prop.getProperty("CT_BaseURL"));
+        //Wait();
+        driver.get(prop.getProperty("CT_BaseURL"));
         try{
             WebElement btnCreate= driver.findElement(By.xpath(prop.getProperty("btncreate")));
             btnCreate.click();
@@ -45,7 +45,7 @@ public class BirthdayRegistry_PO extends BaseClass {
 
             final String randomEmail = randomEmail();
             WebElement email= driver.findElement(By.cssSelector(prop.getProperty("bdayEmail")));
-            email.sendKeys(prop.getProperty(randomEmail));
+            email.sendKeys(randomEmail);
 
             WebElement pass= driver.findElement(By.cssSelector(prop.getProperty("bdayPwd")));
             pass.sendKeys(prop.getProperty("pass"));

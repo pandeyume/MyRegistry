@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-28T16:43:00 IST" name="Default suite" finished-at="2023-09-28T16:46:23 IST" duration-ms="202941">
+    <groups>
+    </groups>
+    <test started-at="2023-09-28T16:43:00 IST" name="Default test" finished-at="2023-09-28T16:46:23 IST" duration-ms="202941">
+      <class name="CanadianTireSignUp_TestCase.RegistrySignUp_TC">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:CanadianTireSignUp_TestCase.RegistrySignUp_TC@3ba987b8]" started-at="2023-09-28T16:43:00 IST" name="Setup" finished-at="2023-09-28T16:43:04 IST" duration-ms="3976" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="verifyBabyRegis_SignUp()[pri:0, instance:CanadianTireSignUp_TestCase.RegistrySignUp_TC@3ba987b8]" started-at="2023-09-28T16:43:04 IST" name="verifyBabyRegis_SignUp" description="Create a Baby Reqistry" finished-at="2023-09-28T16:43:43 IST" duration-ms="39092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBabyRegis_SignUp -->
+        <test-method is-config="true" signature="ExtentReport(org.testng.ITestResult)[pri:0, instance:CanadianTireSignUp_TestCase.RegistrySignUp_TC@3ba987b8]" started-at="2023-09-28T16:43:43 IST" name="ExtentReport" finished-at="2023-09-28T16:43:43 IST" duration-ms="331" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyBabyRegis_SignUp status=SUCCESS method=RegistrySignUp_TC.verifyBabyRegis_SignUp()[pri:0, instance:CanadianTireSignUp_TestCase.RegistrySignUp_TC@3ba987b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReport -->
+        <test-method signature="verifyBirthdayRegis_SignUp()[pri:0, instance:CanadianTireSignUp_TestCase.RegistrySignUp_TC@3ba987b8]" started-at="2023-09-28T16:43:43 IST" name="verifyBirthdayRegis_SignUp" description="Create a Birthday Reqistry" finished-at="2023-09-28T16:44:10 IST" duration-ms="26236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBirthdayRegis_SignUp -->
+        <test-method is-config="true" signature="ExtentReport(org.testng.ITestResult)[pri:0, instance:CanadianTireSignUp_TestCase.RegistrySignUp_TC@3ba987b8]" started-at="2023-09-28T16:44:10 IST" name="ExtentReport" finished-at="2023-09-28T16:44:10 IST" duration-ms="34" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyBirthdayRegis_SignUp status=SUCCESS method=RegistrySignUp_TC.verifyBirthdayRegis_SignUp()[pri:0, instance:CanadianTireSignUp_TestCase.RegistrySignUp_TC@3ba987b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReport -->
+        <test-method signature="verifyHolidayRegis_SignUp()[pri:0, instance:CanadianTireSignUp_TestCase.RegistrySignUp_TC@3ba987b8]" started-at="2023-09-28T16:44:10 IST" name="verifyHolidayRegis_SignUp" description="Create a Holiday Reqistry" finished-at="2023-09-28T16:44:31 IST" duration-ms="21590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHolidayRegis_SignUp -->
+        <test-method is-config="true" signature="ExtentReport(org.testng.ITestResult)[pri:0, instance:CanadianTireSignUp_TestCase.RegistrySignUp_TC@3ba987b8]" started-at="2023-09-28T16:44:31 IST" name="ExtentReport" finished-at="2023-09-28T16:44:31 IST" duration-ms="26" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHolidayRegis_SignUp status=SUCCESS method=RegistrySignUp_TC.verifyHolidayRegis_SignUp()[pri:0, instance:CanadianTireSignUp_TestCase.RegistrySignUp_TC@3ba987b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReport -->
+        <test-method signature="verifyHousewarmingRegis_SignUp()[pri:0, instance:CanadianTireSignUp_TestCase.RegistrySignUp_TC@3ba987b8]" started-at="2023-09-28T16:44:31 IST" name="verifyHousewarmingRegis_SignUp" description="Create a Housewarming Reqistry" finished-at="2023-09-28T16:44:53 IST" duration-ms="21803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHousewarmingRegis_SignUp -->
+        <test-method is-config="true" signature="ExtentReport(org.testng.ITestResult)[pri:0, instance:CanadianTireSignUp_TestCase.RegistrySignUp_TC@3ba987b8]" started-at="2023-09-28T16:44:53 IST" name="ExtentReport" finished-at="2023-09-28T16:44:53 IST" duration-ms="29" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHousewarmingRegis_SignUp status=SUCCESS method=RegistrySignUp_TC.verifyHousewarmingRegis_SignUp()[pri:0, instance:CanadianTireSignUp_TestCase.RegistrySignUp_TC@3ba987b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReport -->
+        <test-method signature="verifyWeddingRegis_SignUp()[pri:0, instance:CanadianTireSignUp_TestCase.RegistrySignUp_TC@3ba987b8]" started-at="2023-09-28T16:44:53 IST" name="verifyWeddingRegis_SignUp" description="Create a Wedding Reqistry" finished-at="2023-09-28T16:45:16 IST" duration-ms="22834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWeddingRegis_SignUp -->
+        <test-method is-config="true" signature="ExtentReport(org.testng.ITestResult)[pri:0, instance:CanadianTireSignUp_TestCase.RegistrySignUp_TC@3ba987b8]" started-at="2023-09-28T16:45:16 IST" name="ExtentReport" finished-at="2023-09-28T16:45:16 IST" duration-ms="22" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWeddingRegis_SignUp status=SUCCESS method=RegistrySignUp_TC.verifyWeddingRegis_SignUp()[pri:0, instance:CanadianTireSignUp_TestCase.RegistrySignUp_TC@3ba987b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReport -->
+        <test-method signature="verifyGraduationRegis_SignUp()[pri:6, instance:CanadianTireSignUp_TestCase.RegistrySignUp_TC@3ba987b8]" started-at="2023-09-28T16:45:16 IST" name="verifyGraduationRegis_SignUp" description="Create a Graduation Reqistry" finished-at="2023-09-28T16:45:38 IST" duration-ms="21746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGraduationRegis_SignUp -->
+        <test-method is-config="true" signature="ExtentReport(org.testng.ITestResult)[pri:0, instance:CanadianTireSignUp_TestCase.RegistrySignUp_TC@3ba987b8]" started-at="2023-09-28T16:45:38 IST" name="ExtentReport" finished-at="2023-09-28T16:45:38 IST" duration-ms="26" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyGraduationRegis_SignUp status=SUCCESS method=RegistrySignUp_TC.verifyGraduationRegis_SignUp()[pri:6, instance:CanadianTireSignUp_TestCase.RegistrySignUp_TC@3ba987b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReport -->
+        <test-method signature="verifyUniverCollegeRegis_SignUp()[pri:7, instance:CanadianTireSignUp_TestCase.RegistrySignUp_TC@3ba987b8]" started-at="2023-09-28T16:45:38 IST" name="verifyUniverCollegeRegis_SignUp" description="Create a University/College Reqistry" finished-at="2023-09-28T16:45:59 IST" duration-ms="21384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUniverCollegeRegis_SignUp -->
+        <test-method is-config="true" signature="ExtentReport(org.testng.ITestResult)[pri:0, instance:CanadianTireSignUp_TestCase.RegistrySignUp_TC@3ba987b8]" started-at="2023-09-28T16:45:59 IST" name="ExtentReport" finished-at="2023-09-28T16:45:59 IST" duration-ms="27" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUniverCollegeRegis_SignUp status=SUCCESS method=RegistrySignUp_TC.verifyUniverCollegeRegis_SignUp()[pri:7, instance:CanadianTireSignUp_TestCase.RegistrySignUp_TC@3ba987b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReport -->
+        <test-method signature="verifyFirstCarRegis_SignUp()[pri:8, instance:CanadianTireSignUp_TestCase.RegistrySignUp_TC@3ba987b8]" started-at="2023-09-28T16:45:59 IST" name="verifyFirstCarRegis_SignUp" description="Create a First Car Reqistry" finished-at="2023-09-28T16:46:22 IST" duration-ms="22714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFirstCarRegis_SignUp -->
+        <test-method is-config="true" signature="ExtentReport(org.testng.ITestResult)[pri:0, instance:CanadianTireSignUp_TestCase.RegistrySignUp_TC@3ba987b8]" started-at="2023-09-28T16:46:22 IST" name="ExtentReport" finished-at="2023-09-28T16:46:22 IST" duration-ms="28" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyFirstCarRegis_SignUp status=SUCCESS method=RegistrySignUp_TC.verifyFirstCarRegis_SignUp()[pri:8, instance:CanadianTireSignUp_TestCase.RegistrySignUp_TC@3ba987b8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExtentReport -->
+        <test-method is-config="true" signature="Terminate()[pri:0, instance:CanadianTireSignUp_TestCase.RegistrySignUp_TC@3ba987b8]" started-at="2023-09-28T16:46:22 IST" name="Terminate" finished-at="2023-09-28T16:46:23 IST" duration-ms="981" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Terminate -->
+      </class> <!-- CanadianTireSignUp_TestCase.RegistrySignUp_TC -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

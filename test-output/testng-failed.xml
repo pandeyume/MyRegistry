@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [CanadianTire Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" parallel="tests" name="Chrome-test(failed)">
+    <parameter name="url" value="https://canadiantire.mrtesting.com/"/>
+    <classes>
+      <class name="CanadianTireSignUp_TestCase.HolidaySignUp_TC">
+        <methods>
+          <include name="Setup"/>
+          <include name="Terminate"/>
+          <include name="ExtentReport"/>
+          <include name="verifyHolidayRegis_SignUp"/>
+        </methods>
+      </class> <!-- CanadianTireSignUp_TestCase.HolidaySignUp_TC -->
+      <class name="CanadianTireSignUp_TestCase.BabyRegistrySignUp_TC">
+        <methods>
+          <include name="Setup"/>
+          <include name="ExtentReport"/>
+          <include name="Terminate"/>
+          <include name="verifyBabyRegis_SignUp"/>
+        </methods>
+      </class> <!-- CanadianTireSignUp_TestCase.BabyRegistrySignUp_TC -->
+      <class name="CanadianTireSignUp_TestCase.UniveCollegeSignUp_TC">
+        <methods>
+          <include name="verifyUniverCollRegis_SignUp"/>
+          <include name="Setup"/>
+          <include name="ExtentReport"/>
+          <include name="Terminate"/>
+        </methods>
+      </class> <!-- CanadianTireSignUp_TestCase.UniveCollegeSignUp_TC -->
+      <class name="CanadianTireSignUp_TestCase.HousewarmingSignUp_TC">
+        <methods>
+          <include name="Setup"/>
+          <include name="ExtentReport"/>
+          <include name="Terminate"/>
+          <include name="verifyHousewarmingRegis_SignUp"/>
+        </methods>
+      </class> <!-- CanadianTireSignUp_TestCase.HousewarmingSignUp_TC -->
+      <class name="CanadianTireSignUp_TestCase.GraduationSignUp_TC">
+        <methods>
+          <include name="verifyGraduationRegis_SignUp"/>
+          <include name="Setup"/>
+          <include name="ExtentReport"/>
+          <include name="Terminate"/>
+        </methods>
+      </class> <!-- CanadianTireSignUp_TestCase.GraduationSignUp_TC -->
+      <class name="CanadianTireSignUp_TestCase.FirstCarSignUp_TC">
+        <methods>
+          <include name="Setup"/>
+          <include name="ExtentReport"/>
+          <include name="Terminate"/>
+          <include name="verifyFirstCarRegis_SignUp"/>
+        </methods>
+      </class> <!-- CanadianTireSignUp_TestCase.FirstCarSignUp_TC -->
+      <class name="CanadianTireSignUp_TestCase.BirthdaySignUp_TC">
+        <methods>
+          <include name="Setup"/>
+          <include name="ExtentReport"/>
+          <include name="Terminate"/>
+          <include name="verifyBirthdayRegis_SignUp"/>
+        </methods>
+      </class> <!-- CanadianTireSignUp_TestCase.BirthdaySignUp_TC -->
+    </classes>
+  </test> <!-- Chrome-test(failed) -->
+</suite> <!-- Failed suite [CanadianTire Suite] -->

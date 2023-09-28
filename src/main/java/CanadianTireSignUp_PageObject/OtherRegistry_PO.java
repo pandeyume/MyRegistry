@@ -12,7 +12,8 @@ public class OtherRegistry_PO extends BaseClass {
 public boolean Other_Registry() throws IOException{
     propertyLoadFiles();
     randomEmail();
-    Wait();
+    //Wait();
+    driver.get(prop.getProperty("CT_BaseURL"));
     try {
 
     }catch (Exception e){

@@ -4,28 +4,31 @@
     <test name="Chrome-test" preserve-order="true">
         <parameter name="url" value="https://canadiantire.mrtesting.com/"/>
         <classes>
-            <class name="CanadianTireSignUp_TestCase.WeddingRegistrySignUp_TC"/>
+			 <class name="CanadianTireSignUp_TestCase.RegistrySignUp_TC">
+			
+<!--            <class name="CanadianTireSignUp_TestCase.WeddingRegistrySignUp_TC"/>
             <class name="CanadianTireSignUp_TestCase.BabyRegistrySignUp_TC"/>
-            <class name="CanadianTireSignUp_TestCase.HousewarmingSignUp_TC"/>
-            <class name="CanadianTireSignUp_TestCase.BirthdaySignUp_TC"/>
-            <class name="CanadianTireSignUp_TestCase.HolidaySignUp_TC"/>
-            <class name="CanadianTireSignUp_TestCase.GraduationSignUp_TC"/>
-            <class name="CanadianTireSignUp_TestCase.FirstCarSignUp_TC"/>
-            <class name="CanadianTireSignUp_TestCase.UniveCollegeSignUp_TC"/>
-<!--            <class name="CanadianTireSignUp_TestCase.OtherSignUp_TC"/>-->
-<!--        <methods>-->
-<!--            <include name="verifyWeddingRegis_SignUp"/>-->
-<!--            <include name="verifyBabyRegis_SignUp"/>-->
-<!--&lt;!&ndash;            <include name="verifyHousewarmingRegis_SignUp"/>&ndash;&gt;-->
-<!--&lt;!&ndash;            <include name="verifyBirthdayRegis_SignUp"/>&ndash;&gt;-->
-<!--&lt;!&ndash;            <include name="verifyHolidayRegis_SignUp"/>&ndash;&gt;-->
-<!--&lt;!&ndash;            <include name="verifyGraduationRegis_SignUp"/>&ndash;&gt;-->
-<!--&lt;!&ndash;            <include name="verifyUniverCollegeRegis_SignUp"/>&ndash;&gt;-->
-<!--&lt;!&ndash;            <include name="verifyFirstCarRegis_SignUp"/>&ndash;&gt;-->
+         <class name="CanadianTireSignUp_TestCase.HousewarmingSignUp_TC"/>
+           <class name="CanadianTireSignUp_TestCase.BirthdaySignUp_TC"/>
+         <class name="CanadianTireSignUp_TestCase.HolidaySignUp_TC"/>
+          <class name="CanadianTireSignUp_TestCase.GraduationSignUp_TC"/>
+         <class name="CanadianTireSignUp_TestCase.FirstCarSignUp_TC"/>
+          <class name="CanadianTireSignUp_TestCase.UniveCollegeSignUp_TC"/>
+		<class name="CanadianTireSignUp_TestCase.OtherSignUp_TC"/>-->
+		
+    <methods>
+            <include name="verifyWeddingRegis_SignUp"/>
+            <include name="verifyBabyRegis_SignUp"/>
+			<include name="verifyHousewarmingRegis_SignUp"/>
+          	<include name="verifyBirthdayRegis_SignUp"/>
+ 			<include name="verifyHolidayRegis_SignUp"/>
+           <include name="verifyGraduationRegis_SignUp"/>
+         	<include name="verifyUniverCollegeRegis_SignUp"/>
+         	<include name="verifyFirstCarRegis_SignUp"/>
 
-<!--        </methods>-->
-<!--    </class>-->
-        </classes>
+	</methods>
+		</class>
+      </classes>
     </test>
 
 <!--    <test name="Firefox-test" preserve-order="true">-->

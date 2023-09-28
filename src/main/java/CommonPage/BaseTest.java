@@ -32,9 +32,9 @@ public class BaseTest {
 //    public BaseTest(WebDriver driver){
 //        this.driver=driver;
 //    }
-   @Parameters({"url"})
+   //@Parameters({"url"})
     @BeforeTest
-    public void Setup(String url){
+    public void Setup(){
         extentReports= new ExtentReports();
         sparkReporter= new ExtentSparkReporter(new File(System.getProperty("user.dir")+"\\Reports\\report.html"));
         extentReports.attachReporter(sparkReporter);
@@ -51,13 +51,14 @@ public class BaseTest {
 
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS );
-        driver.get(url);
+        //driver.get(url);
     }
 
     @AfterTest
     public void Terminate(){
         driver.quit();
         System.out.println("Browser Closed Successfully");
+        //System.out.println("Hello world");
     }
 
     @AfterMethod

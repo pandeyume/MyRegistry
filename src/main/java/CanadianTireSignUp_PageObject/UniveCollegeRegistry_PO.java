@@ -19,8 +19,8 @@ public class UniveCollegeRegistry_PO extends BaseClass {
     public boolean UniverCollege_Registry() throws IOException {
         propertyLoadFiles();
         randomEmail();
-        Wait();
-        //driver.get(prop.getProperty("CT_BaseURL"));
+        //Wait();
+        driver.get(prop.getProperty("CT_BaseURL"));
         try{
             WebElement btnCreate= driver.findElement(By.xpath(prop.getProperty("btncreate")));
             btnCreate.click();
@@ -45,7 +45,7 @@ public class UniveCollegeRegistry_PO extends BaseClass {
 
             final String randomEmail= randomEmail();
             WebElement email= driver.findElement(By.cssSelector(prop.getProperty("uniCollEmail")));
-            email.sendKeys(prop.getProperty(randomEmail));
+            email.sendKeys(randomEmail);
 
             WebElement pass= driver.findElement(By.cssSelector(prop.getProperty("uniCollPwd")));
             pass.sendKeys(prop.getProperty("pass"));

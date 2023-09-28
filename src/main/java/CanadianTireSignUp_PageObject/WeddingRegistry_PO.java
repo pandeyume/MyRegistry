@@ -55,8 +55,8 @@ public class WeddingRegistry_PO extends BaseClass {
     public boolean Wedding_Registry() throws IOException {
         propertyLoadFiles();
         randomEmail();
-        Wait();
-
+        //Wait();
+        driver.get(prop.getProperty("CT_BaseURL"));
         try{
             WebElement btnCreate= driver.findElement(By.xpath(prop.getProperty("btncreate")));
             btnCreate.click();
@@ -100,7 +100,7 @@ public class WeddingRegistry_PO extends BaseClass {
             WebElement address1= driver.findElement(By.cssSelector(prop.getProperty("wedAddress1")));
             address1.clear();
             address1.sendKeys(prop.getProperty("address"));
-            Thread.sleep(3000);
+            Thread.sleep(4000);
             address1.sendKeys(Keys.ARROW_DOWN);
             Thread.sleep(3000);
             address1.sendKeys(Keys.ENTER);
@@ -113,7 +113,7 @@ public class WeddingRegistry_PO extends BaseClass {
             WebElement btnSubmit= driver.findElement(By.cssSelector(prop.getProperty("Submit")));
             btnSubmit.click();
 
-            //WebDriverWait waitFnsh= new WebDriverWait(driver, Duration.ofSeconds(30));
+            WebDriverWait waitFnsh= new WebDriverWait(driver, Duration.ofSeconds(30));
             WebElement signUpCompletepage= driver.findElement(By.xpath(prop.getProperty("wedSignupcompletePage")));
             WebElement title= driver.findElement(By.xpath(prop.getProperty("wedSignupcompletePage1")));
             if (signUpCompletepage.isDisplayed() && title.isDisplayed()){
